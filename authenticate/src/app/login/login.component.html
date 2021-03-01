@@ -1,0 +1,45 @@
+<h2 style="text-align: center; margin: 40px;">LOGIN</h2>
+<form #myform="ngForm" (submit)="loginClicked(myform)">
+
+    <div class="row">
+
+        <div class="col-lg-4"></div>
+        
+            <div class="col-lg-4 centerDiv">
+                
+                <div class="form-group">
+                    <label for="">User Email <span class="text-danger">*</span></label>
+                    <br>
+                    <input class="form-control" required autocomplete="off" type="email" name="email" ngModel placeholder="Enter Your Email" id="email">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="">User Password <span class="text-danger">*</span></label>
+                    <br>
+                    <input class="form-control" required autocomplete="off" type="password" name="password" ngModel placeholder="Enter Your Password" id="password">
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">
+                        Login
+                    </button>
+                    <br>
+                    <br>
+                    <p>
+                        New User. Register Here.
+                    </p>
+                    <a routerLink="/register" class="btn btn-warning">
+                        Register
+                    </a>
+
+                </div>
+
+        
+    
+        </div>
+        <div class="col-lg-4"></div>
+
+    </div>
+</form>
